@@ -20,6 +20,7 @@ public class PaymentResponseParser {
                               "network_token: \"(.*?)\".*?" +
                               "issuer_token: \"(.*?)\"";
 
+
         // Compile the pattern
         Pattern pattern = Pattern.compile(regexPattern, Pattern.DOTALL);
         Matcher matcher = pattern.matcher(response);
